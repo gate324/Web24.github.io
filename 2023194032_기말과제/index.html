@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novation</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Charm:wght@400;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index_style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="pointer"></div>
+    <div class="excluded">
+        <button id="pageUp" onclick="topFunction()">↑</button>
+        <button id="pageDown" onclick="downFunction()">↓</button>
+    </div>
+    <div class="excluded">
+        <header>
+            <div class="area">
+                <a href="index.html">
+                    <div class="img"></div>
+                </a>
+                <nav class="left">
+                    <a href="list.html">PRODUCTS</a>
+                    <a href="list.html">SOFTWARE</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">COMMUNITY</a>
+                    <a href="#">HELP</a>
+                </nav>
+                <nav class="right">
+                    <img src="Search.png" id="searchIcon">
+                    <img src="Shopping Cart.png">
+                    <img src="User.png">
+                    <div class="music">
+                        <div class="sound_pause" id="soundButton" data-sound="Novation.mp3">
+                            <svg width="155" height="20" viewBox="0 0 125 21">
+                                <path id="wavePath" class="wave" d="M0,10 Q5,15 10,10 T20,10 T30,10 T40,10 T50,10 T60,10 T70,10 T80,10 T90,10 T100,10 T110,10 T120,10" />
+                            </svg>
+                        </div>
+                        <div class="message">
+                            사운드를 켜면 더욱 특별한 경험을 <br>하실 수 있습니다.
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="search_bar" id="searchBar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </header>
+    </div>
+
+    <div class="main">
+        <div class="title">
+            <h2>블랙 프라이데이 세일</h2>
+            <h2 style="font-weight: 100;">30 Years of Music Made With Novation</h2>
+            <a href="product.html">자세히 보기</a>
+        </div>
+        <div class="subtitle">
+            <p>아티스트가 시대를 대표하는 음악을 제작할 수 있도록 지원하는 Novation 악기,<br>컨트롤러 및 건반을 대폭 할인된 가격에 만나보세요. 더 적은 비용으로 사운드를 직접 체험해 보세요.</p>
+        </div>
+    </div>
+    <div class="conA">
+        <div class="area">
+                <div class="bk_left" style="background-image: url(index_conA01.jpg);"></div>
+                <div class="bk_right" style="background-image: url(index_conA02.jpg);"></div>
+            <div class="conA_text">
+                <h3>Three decades</h3>
+                <h2>Bass, Beats and Synthesizers</h2>
+                <p>1992년부터 Novation은 아티스트들이 10년을 정의하는 사운드를 만들 수 있도록 음악 기술 개발의 선구자 역할을 해왔습니다.<br>그 이후로 신디사이저, 미디 컨트롤러, 그루브박스 등은 음악 제작의 모든 단계에서 사람들이 창작, 연주, 공연할 수 있도록 지원해<br>왔습니다. Novation의 30년을 되돌아보고 악기를 통해 가능해진 음악을 축하하는 우리의 이야기를 살펴보세요.</p>                
+            </div>
+        </div>
+    </div>
+    <div class="conB">
+        <div class="area">
+            <div class="excluded">
+            <div class="conB_left">
+                <div class="hover_area">
+                    <h3>1990s</h3>
+                    <h2>Bass Station Rack</h2>
+                </div>
+                <div class="hover_area">
+                    <h3>2000s</h3>
+                    <h2>Lightshow Revolution</h2>
+                </div>
+                <div class="hover_area">
+                    <h3>2010s</h3>
+                    <h2>New Millennium</h2>
+                </div>
+                <div class="hover_area">
+                    <h3>2020s</h3>
+                    <h2>Firmware Updates</h2>
+                </div>
+            </div></div>
+            <div class="conB_right">
+                <div class="text">
+                    <p>With legendary synth designer
+                        Chris Huggett at the helm, the Bass Station took
+                        inspiration from the casing of MM10 and redesigned it.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="excluded">
+        <div class="conC">
+            <video autoplay muted loop></video>
+            <div class="split left" onclick="changeContent(-1)"></div>
+            <div class="split right" onclick="changeContent(1)"></div>
+            <div class="conC-content">
+                <h3>PRODUCTS</h3>
+                <h2 style="font-weight: 700;">LUNCH</h2>
+                <a href="list.html">자세히보기</a>
+            </div>
+        </div>
+    </div>
+    <div class="conD">
+        <h3>RECOMMENDED</h3>
+        <div class="list">
+            <div class="item">
+                <a href="product.html" class="profile" style="background-image: url(list01.webp);">
+                </a>
+                <div class="info">
+                    <p>Launchkey Mini 25</p>
+                    <h4>The portable creative controller: 25 mini-keys, Scale and Chord Modes, generative arpeggiator</h4>
+                    <div class="price"><p4>₩158,000.00</p4></div>
+                    <a href="product.html">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="product.html" class="profile" style="background-image: url(list02.webp);">
+                </a>
+                <div class="info">
+                    <p>Launchpad X</p>
+                    <h4>Launchpad X is the essential 64-pad MIDI grid controller for Ableton Live</h4>
+                    <div class="price"><p4>₩263,000.00</p4></div>
+                    <a href="product.html">자세히보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="product.html" class="profile" style="background-image: url(list03.webp);">
+                </a>
+                <div class="info">
+                    <p>Launchpad Pro [MK3]</p>
+                    <h4>Keep your tracks evolving with the four-track, eight-note polyphonic, 32-step standalone sequencer</h4>
+                    <div class="price"><p4>₩460,000.00</p4></div>
+                    <a href="product.html">자세히보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conE">
+        <div class="area">
+            <h3 style="margin-bottom: 120px;">Explore articles</h3>
+            <div class="list">
+                <div class="title">
+                    <div class="tag">
+                        <p>Circuit</p>
+                        <p>Products</p>
+                        <p>Software</p>
+                    </div>
+                    <p>New soundpack alert — Synthwave for Circuit Tracks</p>                    
+                </div>
+                <P style="font-size: 12px; display: flex; flex: 0 0 1;">10th Dec 2024</P>
+            </div>
+            <div class="list">
+                <div class="title">
+                    <div class="tag">
+                        <p>Launchkey</p>
+                        <p>Software</p>
+                        <p>News</p>
+                    </div>
+                    <p>Watch: Enhanced control of Cubase with the new Novation Launchkey</p>                    
+                </div>
+                <P style="font-size: 12px; display: flex; flex: 0 0 1;">28th Nov 2024</P>
+            </div>
+            <div class="list">
+                <div class="title">
+                    <div class="tag">
+                        <p>Offers</p>
+                        <p>Products</p>
+                        <p>Software</p>
+                    </div>
+                    <p>Free for a limited time: iZotope Ozone 11 Elements</p>                    
+                </div>
+                <P style="font-size: 12px; display: flex; flex: 0 0 1;">19th Nov 2024</P>
+            </div>
+            <div class="list">
+                <div class="title">
+                    <div class="tag">
+                        <p>Circuit</p>
+                        <p>Events</p>
+                        <p>Launchkey</p>
+                    </div>
+                    <p>Recap: Here’s what went down at ADE 2024</p>                    
+                </div>
+                <P style="font-size: 12px; display: flex; flex: 0 0 1;">13th Nov 2024</P>
+            </div>
+        </div>
+    </div>
+    <div class="conF">
+    <div class="excluded">
+    <footer>
+        <div class="area">
+            <div class="left">
+                <img src="logo.png">
+                <p>Our family of brands</p>
+                <ul>
+                    <li>Focusrite</li>
+                    <li>ADAM Audio</li>
+                    <li>Novation</li>
+                    <li>Ampify</li>
+                    <li>Sequential</li>
+                    <li>Oberheim</li>
+                    <li>Sonnox</li>
+                </ul>
+                <div class="sns">
+                    <div class="sns_icon">
+                        <img src="facebook.png">Facebook
+                    </div>
+                    <div class="sns_icon">
+                        <img src="instagram.png">Instagram
+                    </div>
+                    <div class="sns_icon">
+                        <img src="twitter X.png">X
+                    </div>
+                    <div class="sns_icon">
+                        <img src="youtube.png">YouTube
+                    </div>
+                    <div class="sns_icon">
+                        <img src="tiktok.png">TikTok
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <p>Subscribe to our mailing list</p>
+                <input type="text" placeholder="Enter your email address">
+                <p>Get the latest news, case studies, advice and special offers delivered straight to your inbox</p>
+            </div>
+        </div>
+        <p style="font-size: 10px; color: white;">2024 © Focusrite Audio Engineering Limited. All rights reserved.</p>
+    </footer></div>
+    </div>
+    <script src="index_style.js"></script>
+</body>
+</html>
